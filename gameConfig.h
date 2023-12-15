@@ -14,12 +14,16 @@ struct 		//contains all game configurations (MAY be loaded from a configuration 
 	int remainingHeight = windHeight - toolBarHeight - statusBarHeight;
 
 	int gridHeight = int(remainingHeight * (2 / 3.0)); 		//The grid is where bricks can be drawn
-	int paddleAreaHeight = remainingHeight - gridHeight;	//The area dedicated for paddle
 
 	color	penColor = BLUE,			//color used to draw lines/write messages
 			bkGrndColor= LAVENDER,		//Background color
 			statusBarColor = LIGHTSEAGREEN;	//background color of the status
 	int penWidth=3;			//width of the pen that draws shapes
+
+	int paddleAreaHeight = remainingHeight - gridHeight;	//The area dedicated for paddle
+	int paddleStartHeight = toolBarHeight + gridHeight + paddleAreaHeight * (3 / 5);
+	int paddleWidth = 150;
+	int paddleHeigth = 40;
 
 
 	int brickWidth = 60;
