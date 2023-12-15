@@ -11,7 +11,7 @@ brick::brick(point r_uprleft, int r_width, int r_height, game* r_pGame):
 normalBrick::normalBrick(point r_uprleft, int r_width, int r_height, game* r_pGame):
 	brick(r_uprleft, r_width, r_height, r_pGame)
 {
-	imageName = "images\\bricks\\NormalBrick.jpg";
+	imageName = "images\\bricks\\NormalBrick.jpg",strength=1;
 }
 void normalBrick::collisionAction()
 {
@@ -20,11 +20,17 @@ void normalBrick::collisionAction()
 hardBrick::hardBrick(point r_uprleft, int r_width, int r_height, game* r_pGame):
 	brick(r_uprleft, r_width, r_height, r_pGame)
 {
-	imageName = "images\\bricks\\HardBrick.jpg";
+	imageName = "images\\bricks\\HardBrick.jpg",strength=3;
 }
 
 void hardBrick::collisionAction()
 {
+	//TODO: Add collision action logic
+	strength--;
+	//score++;
+	if (!strength) {
+		//delete brick
+	}
 }
 
 
