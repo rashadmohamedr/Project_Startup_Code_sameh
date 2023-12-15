@@ -29,6 +29,10 @@ game::game()
 	//4- Create the Paddle
 	//TODO: Add code to create and draw the paddle
 
+	paddle* Paddle;
+	Paddle = new paddle(config.paddleWidth,config.paddleHeigth, this);
+	Paddle->draw();
+	
 	//5- Create the ball
 	//TODO: Add code to create and draw the ball
 	
