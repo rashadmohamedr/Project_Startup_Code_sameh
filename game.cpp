@@ -76,6 +76,10 @@ void game::printMessage(string msg) const	//Prints a message on status bar
 	pWind->SetFont(24, BOLD, BY_NAME, "Arial");
 	pWind->DrawString(10, config.windHeight - (int)(0.85 * config.statusBarHeight), msg);
 }
+//adding comments
+
+
+
 
 
 
