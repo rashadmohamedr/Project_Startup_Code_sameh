@@ -2,6 +2,8 @@
 #include "CMUgraphicsLib\CMUgraphics.h"
 #include "toolbar.h"
 #include "grid.h"
+#include "Paddle.h"
+
 
 
 
