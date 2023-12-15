@@ -16,6 +16,8 @@ enum BrickType	//add more brick types
 class brick :public collidable
 {
 public:
+	int strength;
+public:
 	brick(point r_uprleft, int r_width, int r_height, game* r_pGame);
 
 };
